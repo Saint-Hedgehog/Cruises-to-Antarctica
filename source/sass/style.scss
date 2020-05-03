@@ -1,0 +1,198 @@
+@import "fonts";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  min-width: 1200px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #011C40;
+}
+/*----------header------------------------*/
+
+.container{
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.site-header{
+  width: 100%;
+  min-height: 650px;
+  padding: 35px 0;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  color: #F9FBFD;
+  background-color: #92c0ee;
+}
+
+.header-top{
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 70px;
+  height: 38px;
+}
+
+.header-menu{
+  height: 38px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header-menu li{
+  list-style: none;
+}
+
+.header-menu a{
+  font-family: 'Montserratmedium';
+  padding-left: 33px;
+  text-decoration: none;
+  line-height: 20px;
+  color: #F9FBFD;
+}
+.header-menu a:hover{
+  color: rgb(184, 187, 190);
+  text-decoration: underline;
+}
+.header-menu a:active{
+  color: rgb(132, 138, 143);
+  text-decoration: underline;
+}
+.header-menu a:focus{
+  outline: none;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+.header-title{
+  margin-top: 210px;
+  margin-left: 95px;
+}
+.header-title h1{
+  font-family: 'Montserratbold';
+  font-size: 54px;
+  line-height: 66px;
+}
+
+.header-title p{
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/*----------header-end------------------------*/
+/*----------description------------------------*/
+
+.description{
+  margin: 120px 0;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-title{
+  width: 512px;
+}
+
+.description h2{
+  font-family: "MontserratSemiBold";
+  font-size: 28px;
+  line-height: 150%;
+}
+
+.description p{
+  margin-top: 40px;
+  line-height: 150%;
+}
+
+.description img{
+  width: 560px;
+  height: 301px;
+}
+/*----------description-end------------------------*/
+/*----------advantage------------------------*/
+
+.advantage{
+  width: 100%;
+  padding: 120px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #E3ECF6;
+}
+
+.advantage h2{
+  font-family: "MontserratSemiBold";
+  font-size: 28px;
+  line-height: 150%;
+  margin-bottom: 60px;
+}
+
+.advantage h3{
+  font-family: "Montserratmedium";
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.advantage p{
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.flex-item{
+  width: 360px;
+  background-color: #F9FBFD;
+}
+
+.advantage-cruise-ship{
+  margin: 30px 42px 50px 30px;   //заменил маргин справа с 42 на 34
+}
+
+.advantage-cruise-ship img{
+  width: 27px;
+  height: 32px;
+}
+
+.advantage-cruise-ship h3{
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.advantage-all-inclusive{
+  margin: 35px 50px 50px 30px;
+}
+
+.advantage-all-inclusive img{
+  width: 38px;
+  height: 21px;
+}
+
+.advantage-all-inclusive h3{
+  margin-top: 31px;
+  margin-bottom: 20px;
+}
+
+.advantage-sightseeing-tours{
+  margin: 38px 25px 30px 30px;  //заменил маргин справа с 34 на 25
+}
+
+.advantage-sightseeing-tours img{
+  width: 42px;
+  height: 15px;
+}
+
+.advantage-sightseeing-tours h3{
+  margin-top: 34px;
+  margin-bottom: 20px;
+  line-height: 140%;
+}
+/*----------advantage-end------------------------*/
+@import "media";
