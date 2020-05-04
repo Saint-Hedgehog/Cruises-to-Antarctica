@@ -134,6 +134,7 @@ body{
   font-size: 28px;
   line-height: 150%;
   margin-bottom: 60px;
+  text-align: center;
 }
 
 .advantage h3{
@@ -153,7 +154,7 @@ body{
 }
 
 .advantage-cruise-ship{
-  margin: 30px 42px 50px 30px;   //заменил маргин справа с 42 на 34
+  margin: 30px 34px 50px 30px;   //заменил маргин справа с 42 на 34
 }
 
 .advantage-cruise-ship img{
@@ -195,4 +196,122 @@ body{
   line-height: 140%;
 }
 /*----------advantage-end------------------------*/
+/*----------tour-catalog------------------------*/
+
+.tour-catalog{
+  margin: 120px 0;
+}
+
+.tour-catalog h2{
+  margin-bottom: 60px;
+  font-family: "MontserratSemiBold";
+  font-size: 28px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.tour-catalog .flex-container{
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 258px;
+  height: 384px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.front, .back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: #E3ECF6;
+}
+
+.back{
+  background: #011C40;
+  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  transform: rotateY(180deg);
+}
+
+.card:hover .front{
+  transform: rotateY(180deg);
+}
+
+.card:hover .back{
+  transform: rotateY(360deg);
+}
+
+.front h3{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-family: "Montserratmedium";
+  font-size: 18px;
+  line-height: 150%;
+  color: #F9FBFD;
+}
+
+.back h3{
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  font-family: "Montserratmedium";
+  font-size: 18px;
+  line-height: 150%;
+  color: #F9FBFD;
+}
+
+.back ul{
+  list-style: none;
+  position: absolute;
+  top: 73px;
+  left: 25px;
+  right: 25px;
+  font-family: "Montserratmedium";
+  font-size: 14px;
+  line-height: 140%;
+  color: #F9FBFD;
+}
+
+.back ul li:nth-child(odd){
+  padding-bottom: 3px;
+  font-family: "Montserratmedium";
+  font-size: 14px;
+  line-height: 140%;
+  color: #F9FBFD;
+}
+
+.back ul li:nth-child(even){
+  padding-bottom: 6px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 140%;
+  color: #D8D8D9;
+}
+.back button{
+  padding: 14px 46px 15px 47px;
+  position: absolute;
+  bottom: 35px;
+  left: 25px;
+  right: 25px;
+  font-family: "MontserratSemiBold";
+  font-size: 14px;
+  line-height: 150%;
+  border: none;
+  color: #011C40;
+  background-color: #F9FBFD;
+}
+/*----------tour-catalog-end------------------------*/
 @import "media";

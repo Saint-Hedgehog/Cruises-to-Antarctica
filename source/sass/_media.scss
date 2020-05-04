@@ -1,0 +1,331 @@
+/*----------header------------------------*/
+@media screen and (max-width:768px){
+
+  body{
+    min-width: 768px;
+    font-size: 14px;
+  }
+
+  .container{
+    width: 678px;
+    margin: 0 auto;
+  }
+
+  .site-header{
+    min-height: 638px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .header-top{
+    height: 20px;
+  }
+
+  .logo{
+    width: 38px;
+    height: 20px;
+  }
+
+  .header-menu{
+    height: 20px;
+  }
+
+  .header-menu a{
+    padding-left: 23px;
+    line-height: 17px;
+  }
+
+  .header-title{
+    margin-top: 230px;
+    margin-left: 0;
+  }
+
+  .header-title h1{
+    font-size: 54px;
+    line-height: 66px;
+  }
+
+  .header-title p{
+    margin-top: 29px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width:320px){
+
+  body{
+    min-width: 320px;
+    font-size: 14px;
+  }
+
+  .container{
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .site-header{
+    min-height: 500px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .header-top{
+    height: 22px;
+  }
+
+  .logo{
+    width: 42px;
+    height: 22px;
+  }
+
+  .header-menu{
+    display: none;
+  }
+
+  .header-title{
+    margin-top: 143px;
+    margin-left: 0;
+  }
+
+  .header-title h1{
+    font-size: 36px;
+    line-height: 125%;
+  }
+
+  .header-title p{
+    margin-top: 25px;
+    line-height: 140%;
+  }
+}
+/*----------header-end------------------------*/
+/*----------description------------------------*/
+@media screen and (max-width:768px){
+
+  .description{
+    margin: 100px 0;
+  }
+
+  .container{
+    width: 678px;
+    margin: 0 auto;
+  }
+
+  .description-title{
+    width: 324px;
+  }
+
+  .description h2{
+    font-size: 26px;
+    line-height: 140%;
+  }
+
+  .description p{
+    margin-top: 30px;
+  }
+
+  .description img{
+    width: 324px;
+    height: 264px;
+    background-position: cover;
+  }
+}
+@media screen and (max-width:320px){
+
+  .description{
+    margin: 65px 0;
+  }
+
+  .container{
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .description-title{
+    width: 290px;
+  }
+
+  .description h2{
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  .description p{
+    margin-top: 30px;
+  }
+
+  .description img{
+    width: 290px;
+    height: 186px;
+  }
+}
+/*----------description-end------------------------*/
+/*----------advantage------------------------*/
+@media screen and (max-width:768px){
+  .advantage{
+    padding: 100px 0;
+  }
+
+  .advantage h3{
+    line-height: 140%;
+  }
+
+  .flex-item{
+    width: 206px;
+  }
+
+  .advantage-cruise-ship{
+    margin: 25px 16px 25px 20px;
+  }
+
+  .advantage-cruise-ship img{
+    width: 21px;
+    height: 26px;
+  }
+
+  .advantage-all-inclusive{
+    margin: 29px 24px 45px 20px;
+  }
+
+  .advantage-all-inclusive img{
+    width: 33px;
+    height: 19px;
+  }
+
+  .advantage-all-inclusive h3{
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+
+  .advantage-sightseeing-tours{
+    margin: 32px 19px 25px 20px;
+  }
+
+  .advantage-sightseeing-tours img{
+    width: 38px;
+    height: 13px;
+  }
+
+  .advantage-sightseeing-tours h3{
+    margin-top: 31px;
+    margin-bottom: 20px;
+  }
+
+}
+@media screen and (max-width:320px){
+  .advantage{
+    padding: 65px 0;
+  }
+
+  .advantage h2{
+    font-family: "MontserratSemiBold";
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .advantage h3{
+    line-height: 140%;
+  }
+
+  .flex-item{
+    width: 290px;
+  }
+  .advantage-cruise-ship{
+    margin: 25px 15px 25px 20px;
+  }
+
+  .advantage-cruise-ship img{
+    width: 21px;
+    height: 26px;
+  }
+
+  .advantage-all-inclusive{
+    margin: 29px 47px 25px 20px;
+  }
+
+  .advantage-all-inclusive img{
+    width: 33px;
+    height: 19px;
+  }
+
+  .advantage-all-inclusive h3{
+    margin-top: 28px;
+  }
+
+  .advantage-sightseeing-tours{
+    margin: 32px 37px 25px 20px;
+  }
+
+  .advantage-sightseeing-tours img{
+    width: 38px;
+    height: 13px;
+  }
+
+  .advantage-sightseeing-tours h3{
+    margin-top: 31px;
+  }
+}
+/*----------advantage-end------------------------*/
+/*----------tour-catalog------------------------*/
+@media screen and (max-width:768px){
+  .tour-catalog{
+    margin: 100px 0;
+  }
+
+  .card{
+    width: 309px;
+    height: 386px;
+  }
+
+  .front img{
+    width: 309px;
+    height: 386px;
+  }
+
+  .front h3{
+    bottom: 35px;
+    left: 35px;
+  }
+
+  .back h3{
+    left: 35px;
+  }
+
+  .back ul{
+    left: 35px;
+    right: 35px;
+  }
+
+  .back button{
+    padding: 14px 61px 15px 61px;
+    left: 35px;
+    right: 35px;
+  }
+}
+@media screen and (max-width:320px){
+  .tour-catalog{
+    margin: 65px 0;
+  }
+
+  .tour-catalog h2{
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+
+  .front img{
+    width: 270px;
+    height: 386px;
+  }
+
+  .front h3{
+    bottom: 25px;
+    left: 25px;
+  }
+
+}
+/*----------tour-catalog------------------------*/
