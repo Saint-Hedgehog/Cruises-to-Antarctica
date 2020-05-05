@@ -396,9 +396,45 @@ input[type="checkbox"]{
   margin-bottom: 0;
   padding: 9.1px 16px;
 }
-
-
 /*----------reservation-end------------------------*/
+/*----------contacts------------------------*/
+.contacts{
+  margin: 100px 0;
+}
+
+.contacts-address{
+  margin-top: 81px;
+  margin-left: 97px; // по макету 100px
+}
+
+.contacts-address h3{
+  font-family: "Montserratmedium";
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.address{
+  margin-top: 45px;
+  margin-bottom: 33px;
+  line-height: 150%;
+}
+
+.address img{
+  margin-right: 10px;
+  width: 18px;
+  height: 22px;
+}
+
+.phone{
+  line-height: 150%;
+}
+
+.phone img{
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+/*----------contacts-end------------------------*/
 
 
 @import "media";

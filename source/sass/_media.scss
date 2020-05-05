@@ -419,9 +419,48 @@
 
   .checkbox-area label{
     position: absolute;
-
     left: 28px;
     line-height: 120%;
   }
 }
 /*----------reservation-end------------------------*/
+/*----------contacts------------------------*/
+@media screen and (max-width:768px){
+  map{
+    width: 324px;
+    height: 335px;
+  }
+
+  .contacts-address{
+    margin-top: 72px;
+    margin-left: 30px;
+  }
+
+  .address{
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width:320px){
+  .contacts{
+    margin: 65px 0;
+  }
+
+  .contacts-address{
+    margin-top: 0;
+    margin-left: 0;
+    order: 1;
+  }
+
+  .address{
+    margin-top: 40px;
+  }
+  .map{
+    margin-top: 43px;
+    width: 290px;
+    height: 316px;
+    order: 2;
+  }
+}
+
+
+/*----------contacts-end------------------------*/
