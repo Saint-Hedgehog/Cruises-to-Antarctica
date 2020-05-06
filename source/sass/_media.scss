@@ -1,8 +1,7 @@
 /*----------header------------------------*/
-@media screen and (max-width:768px){
+@media screen and (max-width:1023px){
 
   body{
-    min-width: 768px;
     font-size: 14px;
   }
 
@@ -51,10 +50,9 @@
     line-height: 22px;
   }
 }
-@media screen and (max-width:320px){
+@media screen and (max-width:767px){
 
   body{
-    min-width: 320px;
     font-size: 14px;
   }
 
@@ -99,7 +97,7 @@
 }
 /*----------header-end------------------------*/
 /*----------description------------------------*/
-@media screen and (max-width:768px){
+@media screen and (max-width:1023px){
 
   .description{
     margin: 100px 0;
@@ -129,7 +127,7 @@
     background-position: cover;
   }
 }
-@media screen and (max-width:320px){
+@media screen and (max-width:767px){
 
   .description{
     margin: 65px 0;
@@ -166,7 +164,7 @@
 }
 /*----------description-end------------------------*/
 /*----------advantage------------------------*/
-@media screen and (max-width:768px){
+@media screen and (max-width:1023px){
   .advantage{
     padding: 100px 0;
   }
@@ -217,7 +215,7 @@
   }
 
 }
-@media screen and (max-width:320px){
+@media screen and (max-width:767px){
   .advantage{
     padding: 65px 0;
   }
@@ -272,9 +270,14 @@
 }
 /*----------advantage-end------------------------*/
 /*----------tour-catalog------------------------*/
-@media screen and (max-width:768px){
+@media screen and (max-width:1023px){
   .tour-catalog{
     margin: 100px 0;
+  }
+
+  .tour-catalog-container{
+    width: 648px;
+    margin: 0 auto;
   }
 
   .card{
@@ -307,9 +310,14 @@
     right: 35px;
   }
 }
-@media screen and (max-width:320px){
+@media screen and (max-width:768px){
   .tour-catalog{
     margin: 65px 0;
+  }
+
+  .tour-catalog-container{
+    width: 270px;
+    margin: 0 auto;
   }
 
   .tour-catalog h2{
@@ -330,14 +338,18 @@
 }
 /*----------tour-catalog-end------------------------*/
 /*----------reservation------------------------*/
-@media screen and (max-width:768px){
+@media screen and (max-width:1023px){
   .reservation{
     padding: 100px 0;
   }
 
-  .reservation-flex-container{
-    flex-direction: column;
-    align-items: center;
+  .reservation-container{
+    width: 419px;
+    margin: 0 auto;
+  }
+
+  .reservation .flex-container{
+    flex-wrap: wrap;
   }
 
   .reservation-intro{
@@ -353,18 +365,18 @@
     margin-top: 25px;
     margin-bottom: 60px;
     display: block;
-    width: 419px;
+    width: 352px;
     text-align: center;
   }
 }
-@media screen and (max-width:320px){
+@media screen and (max-width:767px){
   .reservation{
     padding: 65px 0;
   }
 
-  .reservation-flex-container{
-    flex-direction: column;
-    align-items: center;
+  .reservation-container{
+    width: 290px;
+    margin: 0 auto;
   }
 
   .reservation-intro{
@@ -374,7 +386,7 @@
   .reservation-intro h2{
     margin-top: 0px;
     display: block;
-    width: 257px;
+    width: 290px;
     font-size: 24px;
     line-height: 130%;
     text-align: center;
@@ -384,9 +396,10 @@
     margin-top: 25px;
     margin-bottom: 40px;
     display: block;
-    width: 257px;
+    width: 290px;
     font-size: 16px;
     line-height: 140%;
+    text-align: center;
   }
 
   .reservation-form{
@@ -425,7 +438,7 @@
 }
 /*----------reservation-end------------------------*/
 /*----------contacts------------------------*/
-@media screen and (max-width:768px){
+@media screen and (max-width:1023px){
   map{
     width: 324px;
     height: 335px;
@@ -440,7 +453,7 @@
     margin-top: 40px;
   }
 }
-@media screen and (max-width:320px){
+@media screen and (max-width:767px){
   .contacts{
     margin: 65px 0;
   }
@@ -462,5 +475,61 @@
   }
 }
 
+@media screen and (max-width:1023px){
+  .logo-nav img{
+    width: 38px;
+    height: 20px;
+    }
+
+    .logo-nav img{
+      margin-right: 2px;
+      }
+
+    .footer-menu .action{
+      padding-left: 0;
+    }
+
+    .footer-menu{
+      height: 20px;
+    }
+
+    .footer-menu a{
+      padding-left: 23px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    .social .od{
+      margin-left: 23px;
+      margin-right: 23px;
+    }
+}
+@media screen and (max-width:767px){
+  .site-footer{
+    min-height: 203px;
+    padding: 40px 0;
+  }
+
+  .footer-menu a{
+    padding-top: 23px;
+    padding-left: 0;
+  }
+
+  .footer-menu .action img{
+    margin-bottom: 7px;
+    margin-right: 0;
+  }
+
+  .footer-menu{
+    width: 128px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 23px;
+  }
+
+  .social{
+    margin-top: 160px;
+  }
+}
 
 /*----------contacts-end------------------------*/

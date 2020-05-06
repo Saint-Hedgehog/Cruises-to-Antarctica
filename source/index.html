@@ -8,7 +8,16 @@
   <link rel='stylesheet' href='css/style.min.css'>
 </head>
 <body>
-
+  <main>
+		<div class="button js-button-campaign"><span>Акция</span></div>
+	</main>
+	<div class="overlay js-overlay-campaign">
+		<div class="popup js-popup-campaign">
+			<h2>Внимание, акция!</h2>
+			На протяжении 40 лет BMW 3 серии представляет собой идеальное воплощение спортивного седана. В шестом поколении комбинация динамики, непревзойденной управляемости, инновационных функций и максимальной практичности впечатляет как никогда раньше.
+			<div class="close-popup js-close-campaign"></div>
+		</div>
+	</div>
   <header class="site-header" style="background-image: url(img/header_fon.png)">
     <div class="container">
       <div class="header-top">
@@ -69,7 +78,7 @@
   </div>
 
   <div class="tour-catalog">
-    <div class="container">
+    <div class="tour-catalog-container">
       <h2>Ближайшие круизы</h2>
       <div class="flex-container">
         <div class="card">
@@ -245,17 +254,17 @@
   </div>
 
   <div class="reservation" style="background-image: url(img/reservation_fon.png)">
-    <div class="container">
-      <div class="reservation-flex-container">
+    <div class="reservation-container">
+      <div class="flex-container">
         <div class="reservation-intro">
           <h2>Раннее бронирование</h2>
-          <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+          <p>Забронируйте тур за 3-6 месяцев<br> до даты выезда и сэкономьте до 50%</p>
         </div>
 
         <form action="URL" class="reservation-form" method="post">
           <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
           <input type="text" placeholder="Имя">
-          <input type="tel" placeholder="Телефон">
+          <input type="tel" placeholder="Телефон xxx-xx-xx-xx-xxx" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{3}]">
           <input type="email" placeholder="Электронная почта">
 
           <div class="checkbox-area">
@@ -283,5 +292,28 @@
       </div>
      </div>
    </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="flex-container">
+        <div class="logo-nav">
+          <ul class="footer-menu">
+            <li><a href="#" class="action"><img src="img/logo.svg" alt="logo"></a></li>
+            <li><a href="#">Преимущества </a></li>
+            <li><a href="#">Направления</a></li>
+            <li><a href="#">Ближайшие круизы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="social">
+          <div class="fb"><a href="https://www.facebook.com/" target="_blank"><img src="img/fb.svg" alt="fb"></a></div>
+          <div class="od"><a href="https://ok.ru/" target="_blank"><img src="img/od.svg" alt="od"></a></div>
+          <div class="tw"><a href="https://twitter.com" target="_blank"><img src="img/tw.svg" alt="tw"></a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="build/js/script.js"></script>
 </body>
 </html>

@@ -6,15 +6,90 @@
 }
 
 body{
-  min-width: 1200px;
+
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #011C40;
 }
 /*----------header------------------------*/
 
+.button {
+  width: 300px;
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  background-color: #ff5252;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button span {
+	line-height: 60px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .8);
+	display: none;
+}
+
+.popup {
+	position: absolute;
+	width: 400px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	box-sizing: border-box;
+	background-color: #ff5252;
+	color: #fff;
+}
+
+.close-popup {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+.close-popup:before {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	left: -4px;
+	transform: rotate(-45deg);
+}
+
+.close-popup:after {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	transform: rotate(45deg);
+	left: -4px;
+}
+/* */
 .container{
-  width: 1160px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -40,32 +115,32 @@ body{
   height: 38px;
 }
 
-.header-menu{
+.header-menu, .footer-menu{
   height: 38px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.header-menu li{
+.header-menu li, .footer-menu li{
   list-style: none;
 }
 
-.header-menu a{
+.header-menu a, .footer-menu a{
   font-family: 'Montserratmedium';
   padding-left: 33px;
   text-decoration: none;
   line-height: 20px;
   color: #F9FBFD;
 }
-.header-menu a:hover{
+.header-menu a:hover, .footer-menu a:hover{
   color: rgb(184, 187, 190);
   text-decoration: underline;
 }
-.header-menu a:active{
+.header-menu a:active, .footer-menu a:active{
   color: rgb(132, 138, 143);
   text-decoration: underline;
 }
-.header-menu a:focus{
+.header-menu a:focus, .footer a:focus{
   outline: none;
   text-decoration: underline;
   text-decoration-style: dotted;
@@ -202,6 +277,11 @@ body{
   margin: 120px 0;
 }
 
+.tour-catalog-container{
+  width: 1130px;
+  margin: 0 auto;
+}
+
 .tour-catalog h2{
   margin-bottom: 60px;
   font-family: "MontserratSemiBold";
@@ -324,9 +404,9 @@ body{
   background-size: cover;
 }
 
-.reservation-flex-container{
-  display: flex;
-  justify-content: space-around;
+.reservation-container{
+  width: 1040px;
+  margin: 0 auto;
 }
 
 .reservation-intro h2{
@@ -343,6 +423,8 @@ body{
   font-size: 18px;
   line-height: 150%;
 }
+
+
 
 .reservation-form{
   padding: 50px;
@@ -435,6 +517,40 @@ input[type="checkbox"]{
   height: 18px;
 }
 /*----------contacts-end------------------------*/
+/*----------site-footer------------------------*/
+.site-footer{
+  padding: 50px 0;
+  background-color:  #011C40;
+}
 
+.logo-nav img{
+margin-right: 7px;
+}
+
+.social{
+  display: flex;
+  align-items: center;
+}
+
+.social .od{
+  margin-left: 33px;
+  margin-right: 33px;
+}
+
+.social a:hover{
+  color: rgb(184, 187, 190);
+  text-decoration: underline;
+}
+.social a:active{
+  color: rgb(132, 138, 143);
+  text-decoration: underline;
+}
+.social a:focus{
+  outline: none;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+/*----------site-footer-end------------------------*/
 
 @import "media";
