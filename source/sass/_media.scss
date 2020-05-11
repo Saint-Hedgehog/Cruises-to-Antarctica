@@ -513,16 +513,16 @@
   }
 
   .checkbox-label{
-    margin-left: 28px;
+    padding-left: 28px;
     display: block;
     line-height: 12px;
   }
 
-  .checkbox-label::before{
+  .check-box{
+    margin-left: -28px;
+    top: 2px;
     width: 20px;
     height: 20px;
-    left: -28px;
-    top: 2.5px;
   }
 
   .form-btn{

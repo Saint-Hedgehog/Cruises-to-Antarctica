@@ -61,6 +61,10 @@ body{
   background-size: 70px 38px;
 }
 
+.logo:focus{
+  border: 1px dotted #011C40;
+}
+
 .header-menu{
   height: 38px;
   display: flex;
@@ -108,6 +112,10 @@ body{
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.hamburger-icon-container{
+  border: 1px dotted #011C40;
 }
 
 .hamburger{
@@ -182,6 +190,10 @@ body{
 
 .popup-logo{
   margin-bottom: 20px;
+}
+
+.popup-logo:focus{
+  border: 1px dotted #011C40;
 }
 
 .header-popap-item{
@@ -553,6 +565,11 @@ body{
   border: none;
   color: #011C40;
   background-color: #F9FBFD;
+  cursor: pointer;
+}
+
+.back-button:focus{
+  border: 1px dotted #011C40;
 }
 
 /* tour-catalog styles end*/
@@ -636,12 +653,22 @@ body{
   margin-bottom: 25px;
 }
 
+.checkbox-input{
+  position: absolute;
+  appearance: none;
+}
+
 .check-box{
-  display: none;
+  margin-left: -23px;
+  position: absolute;
+  top: -2px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/icon-checkbox-off-768_1366.svg);
 }
 
 .checkbox-label{
-  margin-left: 23px;
+  padding-left: 23px;
   display: block;
   position: relative;
   font-size: 10px;
@@ -649,15 +676,16 @@ body{
   color: #F9FBFD;
 }
 
-.checkbox-label::before{
-  display: block;
-  content: "";
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: -23px;
-  top: -2.5px;
-  background-image: url(../img/icon-checkbox_768_1366.svg);
+.checkbox-input:checked+.check-box{
+  background-image: url(../img/icon-checkbox-on-768_1366.svg);
+}
+
+.checkbox-input:focus+.check-box{
+  border: 1px dotted #011C40;
+}
+
+.reservation-form-field:focus{
+  border: 1px dotted #011C40;
 }
 
 .form-btn{
@@ -670,6 +698,11 @@ body{
   line-height: 21px;
   border: 0;
   color: #011C40;
+  cursor: pointer;
+}
+
+.form-btn:focus{
+  border: 1px dotted #011C40;
 }
 
 /* reservation styles end*/
@@ -695,6 +728,10 @@ body{
 
 iframe{
   order: 0;
+}
+
+iframe:focus{
+  border: 1px dotted #011C40;
 }
 
 .contacts-flex-item{
@@ -813,6 +850,10 @@ iframe{
   background-size: 70px 38px;
 }
 
+.foter-logo:focus{
+  border: 1px dotted #99a14b;
+}
+
 .social{
   width: 117px;
   height: 38px;
@@ -885,18 +926,10 @@ iframe{
   background-size: 20px 16px;
 }
 
-.fb:active,
-.od:active,
-.tw:active{
-  color: #50532e;
-}
-
 .fb:focus,
 .od:focus,
 .tw:focus{
-  outline: none;
-  text-decoration: underline;
-  text-decoration-style: dotted;
+  border: 1px dotted #99a14b;
 }
 
 /* footer styles end*/
