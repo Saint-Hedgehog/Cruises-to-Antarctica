@@ -1,19 +1,21 @@
-/*----------header------------------------*/
+/* Header styles start*/
+
 @media screen and (max-width:1023px){
 
   body{
+    min-width: 320px;
     font-size: 14px;
+    line-height: 17px;
   }
 
   .container{
-    width: 678px;
+    max-width: 768px;
+    padding: 0 45px;
     margin: 0 auto;
   }
 
   .site-header{
-    min-height: 638px;
     padding-top: 30px;
-    padding-bottom: 30px;
   }
 
   .header-top{
@@ -23,48 +25,43 @@
   .logo{
     width: 38px;
     height: 20px;
+    background-size: 38px 20px;
+  }
+
+  .logo:hover{
+    width: 38px;
+    height: 20px;
+    background-size: 38px 20px;
   }
 
   .header-menu{
     height: 20px;
   }
+  .header-item{
+    margin-left: 23px;
+  }
 
-  .header-menu a{
-    padding-left: 23px;
+  .header-link{
     line-height: 17px;
   }
-
-  .header-title{
-    margin-top: 230px;
-    margin-left: 0;
-  }
-
-  .header-title h1{
-    font-size: 54px;
-    line-height: 66px;
-  }
-
-  .header-title p{
-    margin-top: 29px;
-    font-size: 18px;
-    line-height: 22px;
-  }
 }
+
 @media screen and (max-width:767px){
 
   body{
+    min-width: 320px;
     font-size: 14px;
   }
 
   .container{
-    width: 290px;
+    max-width: 320px;
+    padding: 15px;
     margin: 0 auto;
   }
 
   .site-header{
-    min-height: 500px;
     padding-top: 20px;
-    padding-bottom: 30px;
+    background-position: center;
   }
 
   .header-top{
@@ -74,210 +71,244 @@
   .logo{
     width: 42px;
     height: 22px;
+    background-size: 42px 22px;
+  }
+
+  .logo:hover{
+    width: 42px;
+    height: 22px;
+    background-size: 42px 22px;
   }
 
   .header-menu{
     display: none;
   }
 
-  .header-title{
-    margin-top: 143px;
-    margin-left: 0;
-  }
-
-  .header-title h1{
-    font-size: 36px;
-    line-height: 125%;
-  }
-
-  .header-title p{
-    margin-top: 25px;
-    line-height: 140%;
+  .header-menu .hamburger{
+    visibility: visible;
   }
 }
-/*----------header-end------------------------*/
-/*----------description------------------------*/
+
+/* Header styles end*/
+
+/* intro styles start*/
+
+@media screen and (max-width:1023px){
+
+  .intro{
+    min-height: 638px;
+  }
+
+  .intro-title{
+    padding-top: 280px;
+    padding-left: 0;
+    font-size: 50px;
+    line-height: 61px;
+
+  }
+
+  .intro-subtitle{
+    padding-top: 29px;
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width:767px){
+
+  .intro-title{
+    padding-top: 185px;
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .intro-subtitle{
+    padding-top: 25px;
+    line-height: 22px;
+  }
+
+  .hamburger{
+    visibility: visible;
+  }
+}
+
+/* intro styles end*/
+
+/* description styles start*/
+
 @media screen and (max-width:1023px){
 
   .description{
     margin: 100px 0;
   }
 
-  .container{
-    width: 678px;
-    margin: 0 auto;
+  .description-flex-item{
+    width: 324px;
   }
 
   .description-title{
-    width: 324px;
-  }
-
-  .description h2{
+    margin-bottom: 30px;
+    width: 205px;
     font-size: 26px;
-    line-height: 140%;
+    line-height: 36px;
   }
 
-  .description p{
-    margin-top: 30px;
+  .penguins_1366, .penguins_320{
+    display: none;
   }
 
-  .description img{
-    width: 324px;
-    height: 264px;
-    background-position: cover;
+  .penguins_768{
+    display: block;
+    max-width: 324px;
+    max-height: 264px;
   }
 }
+
 @media screen and (max-width:767px){
 
   .description{
     margin: 65px 0;
   }
 
-  .container{
-    width: 290px;
-    margin: 0 auto;
+  .description-flex-container{
+    flex-wrap: wrap;
   }
 
-  .flex-container{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  .description-flex-item{
+    width: 290px;
   }
 
   .description-title{
-    width: 290px;
-  }
-
-  .description h2{
     font-size: 24px;
-    line-height: 140%;
+    line-height: 34px;
   }
 
-  .description p{
-    margin-top: 30px;
+  .penguins_320{
+    display: block;
+    max-width: 290px;
+    max-height: 186px;
   }
 
-  .description img{
-    width: 290px;
-    height: 186px;
+  .penguins_1366,
+  .penguins_768{
+    display: none;
   }
 }
-/*----------description-end------------------------*/
-/*----------advantage------------------------*/
+
+/* description styles end*/
+
+/* advantage styles start*/
+
 @media screen and (max-width:1023px){
   .advantage{
     padding: 100px 0;
   }
 
-  .advantage h3{
-    line-height: 140%;
+  .advantage-title{
+    font-size: 26px;
+    line-height: 39px;
   }
 
-  .flex-item{
+  .advantage-cards{
+    padding: 25px 20px;
     width: 206px;
   }
 
-  .advantage-cruise-ship{
-    margin: 25px 16px 25px 20px;
+  .advantage-cards-title{
+    line-height: 25px;
   }
 
-  .advantage-cruise-ship img{
+  .advantage-cruise-ship .advantage-cards-subtitle{
+    width: 154px;
+  }
+
+  .advantage-all-inclusive .advantage-cards-subtitle{
+    width: 162px;
+  }
+
+  .advantage-sightseeing-tours .advantage-cards-subtitle{
+    width: 167px;
+  }
+
+  .icon-ship{
     width: 21px;
     height: 26px;
   }
 
-  .advantage-all-inclusive{
-    margin: 29px 24px 45px 20px;
-  }
-
-  .advantage-all-inclusive img{
+  .icon-check-mark{
+    margin-top: 4px;
+    margin-bottom: 28px;
+    display: block;
     width: 33px;
     height: 19px;
   }
 
-  .advantage-all-inclusive h3{
-    margin-top: 28px;
-    margin-bottom: 20px;
-  }
-
-  .advantage-sightseeing-tours{
-    margin: 32px 19px 25px 20px;
-  }
-
-  .advantage-sightseeing-tours img{
+  .icon-boat{
+    margin-top: 7px;
+    margin-bottom: 31px;
+    display: block;
     width: 38px;
     height: 13px;
   }
-
-  .advantage-sightseeing-tours h3{
-    margin-top: 31px;
-    margin-bottom: 20px;
-  }
-
 }
+
 @media screen and (max-width:767px){
   .advantage{
     padding: 65px 0;
   }
 
-  .advantage h2{
-    font-family: "MontserratSemiBold";
+  .advantage-flex-container{
+    flex-wrap: wrap;
+  }
+
+  .advantage-title{
     font-size: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
 
-  .advantage h3{
-    line-height: 140%;
-  }
-
-  .flex-item{
+  .advantage-cards{
     width: 290px;
   }
-  .advantage-cruise-ship{
-    margin: 25px 15px 25px 20px;
+
+  .advantage-all-inclusive .advantage-cards-title{
+    width: 133px;
   }
 
-  .advantage-cruise-ship img{
-    width: 21px;
-    height: 26px;
+  .advantage-sightseeing-tours .advantage-cards-title{
+    width: 151px;
   }
 
-  .advantage-all-inclusive{
-    margin: 29px 47px 25px 20px;
+  .advantage-cruise-ship .advantage-cards-subtitle{
+    width: 255px;
   }
 
-  .advantage-all-inclusive img{
-    width: 33px;
-    height: 19px;
+  .advantage-all-inclusive .advantage-cards-subtitle{
+    width: 223px;
   }
 
-  .advantage-all-inclusive h3{
-    margin-top: 28px;
-  }
-
-  .advantage-sightseeing-tours{
-    margin: 32px 37px 25px 20px;
-  }
-
-  .advantage-sightseeing-tours img{
-    width: 38px;
-    height: 13px;
-  }
-
-  .advantage-sightseeing-tours h3{
-    margin-top: 31px;
+  .advantage-sightseeing-tours .advantage-cards-subtitle{
+    width: 233px;
   }
 }
-/*----------advantage-end------------------------*/
-/*----------tour-catalog------------------------*/
+
+/* advantage styles end*/
+
+/* tour-catalog styles start*/
+
 @media screen and (max-width:1023px){
   .tour-catalog{
     margin: 100px 0;
   }
 
   .tour-catalog-container{
-    width: 648px;
-    margin: 0 auto;
+    width: 768px;
+    padding: 0 60px;
+  }
+
+  .tour-catalog-title{
+    font-size: 26px;
+    line-height: 39px;
   }
 
   .card{
@@ -285,251 +316,421 @@
     height: 386px;
   }
 
-  .front img{
+  .card-astoria_768,
+  .card-atlantis_768,
+  .card-odysseus_768,
+  .card-olympi_768,
+  .card-aurora_768,
+  .card-leonor_768,
+  .card-minion1_768{
+    display: block;
     width: 309px;
-    height: 386px;
   }
 
-  .front h3{
+  .card-astoria_1366, .card-astoria_320,
+  .card-atlantis_1366, .card-atlantis_320,
+  .card-odysseus_1366, .card-odysseus_320,
+  .card-olympi_1366, .card-olympi_320,
+  .card-aurora_1366, .card-aurora_320,
+  .card-leonor_1366, .card-leonor_320,
+  .card-minion1_1366, .card-minion1_320{
+    display: none;
+  }
+
+  .front-title{
     bottom: 35px;
     left: 35px;
   }
 
-  .back h3{
+  .back-title{
     left: 35px;
   }
 
-  .back ul{
+  .back-subtitle-list{
     left: 35px;
     right: 35px;
   }
 
-  .back button{
-    padding: 14px 61px 15px 61px;
+  .back-button{
+    padding: 14px 61px 15px;
     left: 35px;
     right: 35px;
   }
 }
-@media screen and (max-width:768px){
+
+@media screen and (max-width:767px){
   .tour-catalog{
     margin: 65px 0;
   }
 
   .tour-catalog-container{
-    width: 270px;
-    margin: 0 auto;
+    width: 320px;
+    padding: 0 25px;
   }
 
-  .tour-catalog h2{
+  .tour-catalog-title{
     margin-bottom: 40px;
     font-size: 24px;
+    line-height: 36px;
   }
 
-  .front img{
+  .card{
     width: 270px;
-    height: 386px;
   }
 
-  .front h3{
+  .card-astoria_320,
+  .card-atlantis_320,
+  .card-odysseus_320,
+  .card-olympi_320,
+  .card-aurora_320,
+  .card-leonor_320,
+  .card-minion1_320{
+    display: block;
+    width: 270px;
+  }
+
+  .card-astoria_1366, .card-astoria_768,
+  .card-atlantis_1366, .card-atlantis_768,
+  .card-odysseus_1366, .card-odysseus_768,
+  .card-olympi_1366, .card-olympi_768,
+  .card-aurora_1366, .card-aurora_768,
+  .card-leonor_1366, .card-leonor_768,
+  .card-minion1_1366, .card-minion1_768{
+    display: none;
+  }
+
+  .front-title{
     bottom: 25px;
     left: 25px;
   }
 
+  .back-title{
+    left: 25px;
+  }
+
+  .back-subtitle-list{
+    left: 25px;
+    right: 25px;
+  }
+
+  .back-button{
+    padding: 14px 51px 15px 52px;
+    left: 25px;
+    right: 25px;
+  }
+
 }
-/*----------tour-catalog-end------------------------*/
-/*----------reservation------------------------*/
+
+/* tour-catalog styles end*/
+
+/* reservation styles start*/
+
 @media screen and (max-width:1023px){
   .reservation{
     padding: 100px 0;
+    min-height: 805px;
+    background-image: url(../img/reservation_fon_768.png);
   }
 
   .reservation-container{
-    width: 419px;
-    margin: 0 auto;
+    max-width: 768px;
+    padding: 0 174px;
   }
 
-  .reservation .flex-container{
+  .reservation-flex-container{
     flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .reservation-intro{
-    width: 419px;
+  .reservation-flex-item{
+    max-width: 419px;
+    text-align: center;
   }
 
-  .reservation-intro h2{
-    margin-top: 0;
-    font-size: 34px;
-  }
-
-  .reservation-intro p{
-    margin-top: 25px;
-    margin-bottom: 60px;
+  .reservation-title{
+    margin-bottom: 25px;
     display: block;
-    width: 352px;
+    width: 419px;
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+  }
+
+  .reservation-subtitle{
+    margin: 0 33.5px;
     text-align: center;
   }
 }
+
 @media screen and (max-width:767px){
   .reservation{
     padding: 65px 0;
+    min-height: 760px;
   }
 
   .reservation-container{
-    width: 290px;
-    margin: 0 auto;
+    max-width: 320px;
+    padding: 0 15px;
   }
 
-  .reservation-intro{
-    width: 257px;
-  }
-
-  .reservation-intro h2{
-    margin-top: 0px;
-    display: block;
-    width: 290px;
-    font-size: 24px;
-    line-height: 130%;
+  .reservation-flex-item{
+    max-width: 290px;
     text-align: center;
   }
 
-  .reservation-intro p{
+  .reservation-title{
+    margin: 0 48px;
+    width: 194px;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  .reservation-subtitle{
+    margin: 0 16.5px;
     margin-top: 25px;
-    margin-bottom: 40px;
-    display: block;
-    width: 290px;
-    font-size: 16px;
-    line-height: 140%;
     text-align: center;
   }
 
   .reservation-form{
     padding: 40px 30px;
-    width: 230px;
-    height: 380px;
+    width: 290px;
+    height: 460px;
   }
 
-  .reservation-form p{
-    line-height: 140%;
+  .reservation-form-info{
+    width: 214px;
+    line-height: 25px;
     text-align: center;
   }
 
-  input[type="text"], input[type="tel"], input[type="email"], input[type="submit"]{
+  .reservation-form-field, .form-btn{
     width: 230px;
   }
 
-  .checkbox-area{
+  .reservation-form-field-email{
+    margin-bottom: 20px;
+  }
+
+  .checkbox-label{
+    margin-left: 28px;
+    display: block;
+    line-height: 12px;
+  }
+
+  .checkbox-label::before{
+    width: 20px;
     height: 20px;
-   }
-
-   input[type="checkbox"]{
-    margin-left: 4px;
-    transform:scale(2.23);
+    left: -28px;
+    top: 2.5px;
   }
 
-  .checkbox-area{
-    position: relative;
-  }
-
-  .checkbox-area label{
-    position: absolute;
-    left: 28px;
-    line-height: 120%;
+  .form-btn{
+    margin-top: 30px;
   }
 }
-/*----------reservation-end------------------------*/
-/*----------contacts------------------------*/
+
+/* reservation styles end*/
+
+/* contacts styles start*/
+
 @media screen and (max-width:1023px){
-  map{
-    width: 324px;
-    height: 335px;
+  .contacts{
+    margin: 100px 0;
   }
 
-  .contacts-address{
-    margin-top: 72px;
-    margin-left: 30px;
+  .contacts-container{
+    max-width: 768px;
+    padding: 0 45px;
+  }
+
+  .contacts-flex-container{
+    flex-wrap: nowrap;
+  }
+
+  iframe{
+    width: 324px;
+    height: 335px;
+    order: 0;
+  }
+
+  .contacts-flex-item{
+    width: 324px;
   }
 
   .address{
     margin-top: 40px;
   }
 }
+
 @media screen and (max-width:767px){
   .contacts{
     margin: 65px 0;
   }
 
+  .contacts-container{
+    max-width: 320px;
+    padding: 0 15px;
+  }
+
+  .contacts-flex-container{
+    flex-wrap: wrap;
+    gap: 43px;
+  }
+
+  iframe{
+    width: 290px;
+    height: 316px;
+    order: 2;
+  }
+
+  .contacts-flex-item{
+    width: 290px;
+  }
+
   .contacts-address{
     margin-top: 0;
-    margin-left: 0;
+    width: 290px;
     order: 1;
   }
 
   .address{
     margin-top: 40px;
   }
-  .map{
-    margin-top: 43px;
-    width: 290px;
-    height: 316px;
-    order: 2;
-  }
 }
 
+/* contacts styles end*/
+
+/* footer styles start*/
+
 @media screen and (max-width:1023px){
-  .logo-nav img{
-    width: 38px;
+  .footer-menu{
     height: 20px;
-    }
+  }
 
-    .logo-nav img{
+  .footer-item{
+    margin-right: 23px;
+  }
+
+  .footer-link{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .foter-logo{
       margin-right: 2px;
-      }
-
-    .footer-menu .action{
-      padding-left: 0;
+      width: 38px;
+      height: 20px;
+      background-size: 38px 20px;
     }
 
-    .footer-menu{
+    .foter-logo:hover{
+      margin-right: 2px;
+      width: 38px;
+      height: 20px;
+      background-size: 38px 20px;
+    }
+
+    .social{
+      width: 87px;
       height: 20px;
     }
 
-    .footer-menu a{
-      padding-left: 23px;
-      font-size: 12px;
-      line-height: 15px;
+    .fb{
+      width: 9px;
+      height: 16px;
+      background-size: 9px 16px;
     }
 
-    .social .od{
+    .fb:hover{
+      width: 9px;
+      height: 16px;
+      background-size: 9px 16px;
+    }
+
+    .icon-od{
       margin-left: 23px;
       margin-right: 23px;
     }
+
+    .od{
+      width: 16px;
+      height: 16px;
+      background-size: 16px 16px;
+    }
+
+    .od:hover{
+      width: 16px;
+      height: 16px;
+      background-size: 16px 16px;
+    }
+
+    .tw{
+      width: 16px;
+      height: 13px;
+      background-size: 16px 13px;
+    }
+
+    .tw:hover{
+      width: 16px;
+      height: 13px;
+      background-size: 16px 13px;
+    }
 }
+
 @media screen and (max-width:767px){
+  .flex-container{
+    flex-direction: column;
+    gap: 30px;
+  }
+
   .site-footer{
-    min-height: 203px;
     padding: 40px 0;
   }
 
-  .footer-menu a{
-    padding-top: 23px;
-    padding-left: 0;
-  }
-
-  .footer-menu .action img{
-    margin-bottom: 7px;
-    margin-right: 0;
+  .site-footer-flex-container{
+    display: block;
   }
 
   .footer-menu{
-    width: 128px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 23px;
+    height: 223px;
+    display: block;
+  }
+
+  .footer-item{
+    margin-right: 0;
+    margin-top: 23px;
+  }
+
+  .footer-item:first-child{
+    margin-top: 0;
+  }
+
+  .footer-link{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .foter-logo{
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-right: 0;
+    width: 42px;
+    height: 22px;
+    background-size: 42px 22px;
+  }
+
+  .foter-logo:hover{
+    margin-right: 0;
+    width: 42px;
+    height: 22px;
+    background-size: 42px 22px;
   }
 
   .social{
-    margin-top: 160px;
+    width: 87px;
+    height: 16px;
   }
 }
 
-/*----------contacts-end------------------------*/
+/* footer styles start*/
