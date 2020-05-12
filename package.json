@@ -21,7 +21,7 @@
     "posthtml-include": "^1.4.3",
     "stylelint": "13.3.x",
     "stylelint-config-htmlacademy": "0.1.x",
-    "eslint": "6.8.0",
+    "eslint": "7.0.0",
     "eslint-config-htmlacademy": "0.5.x"
   },
   "scripts": {
