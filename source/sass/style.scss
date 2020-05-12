@@ -59,6 +59,7 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70px 38px;
+  cursor: pointer;
 }
 
 .logo:focus{
@@ -86,6 +87,7 @@ body{
 .header-link:hover{
   color: #011C40;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .header-link:active{
@@ -159,12 +161,14 @@ body{
 .hamburger-icon-container:hover+.hamburger-icon:hover::before,
 .hamburger-icon-container:hover+.hamburger-icon:hover::after {
   background-color: #011C40;
+  cursor: pointer;
 }
 
 .hamburger-icon:hover,
 .hamburger-icon:hover::before,
 .hamburger-icon:hover::after{
   background-color: #011C40;
+  cursor: pointer;
 }
 
 .hamburger-icon:active,
@@ -217,6 +221,7 @@ body{
 .header-popap-link:hover{
   color: #011C40;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .header-popap-link:active{
@@ -497,10 +502,12 @@ body{
 
 .card:hover .front{
   transform: rotateY(180deg);
+  cursor: pointer;
 }
 
 .card:hover .back{
   transform: rotateY(360deg);
+  cursor: pointer;
 }
 
 .front-title{
@@ -682,6 +689,23 @@ body{
   background-image: url(../img/icon-checkbox-on-768_1366.svg);
 }
 
+.checkbox-input:hover+.check-box{
+  border-color:rgba(0,0,0,0.4);
+  box-shadow: 1px 1px 27px -1px #80ff00;
+  cursor: pointer;
+}
+
+.reservation-form-field:hover{
+  border-color:rgba(0,0,0,0.4);
+  box-shadow: 1px 1px 27px -1px #80ff00;
+  cursor: pointer;
+}
+
+.checkbox-label:hover{
+  box-shadow: 1px 1px 27px -1px #80ff00;
+  cursor: pointer;
+}
+
 .checkbox-input:focus+.check-box{
   border: 1px dotted #011C40;
 }
@@ -700,6 +724,12 @@ body{
   line-height: 21px;
   border: 0;
   color: #011C40;
+  cursor: pointer;
+}
+
+.form-btn:hover{
+  border-color:rgba(0,0,0,0.4);
+  box-shadow: 1px 1px 27px -1px #80ff00;
   cursor: pointer;
 }
 
@@ -781,6 +811,11 @@ iframe:focus{
   color: #011C40;
   text-decoration: none;
 }
+
+.phone-namber:hover{
+  color: #99a14b;
+  cursor: pointer;
+}
 /* contacts styles end*/
 
 /* footer styles start*/
@@ -823,6 +858,7 @@ iframe:focus{
 .footer-link:hover{
   color: #99a14b;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .footer-link:active{
@@ -856,6 +892,7 @@ iframe:focus{
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70px 38px;
+  cursor: pointer;
 }
 
 .foter-logo:focus{
@@ -912,6 +949,7 @@ iframe:focus{
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 20px;
+  cursor: pointer;
 }
 
 .tw{
@@ -932,6 +970,7 @@ iframe:focus{
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 16px;
+  cursor: pointer;
 }
 
 .fb:focus,
