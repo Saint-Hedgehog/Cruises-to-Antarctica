@@ -431,6 +431,8 @@ body{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
   gap: 30px;
 }
 
@@ -728,6 +730,7 @@ body{
 
 iframe{
   order: 0;
+  border: 0px
 }
 
 iframe:focus{
