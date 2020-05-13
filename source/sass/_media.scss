@@ -176,6 +176,8 @@
   }
 
   .description-flex-item{
+    margin-right: 0;
+    margin-bottom: 40px;
     width: 290px;
   }
 
@@ -271,6 +273,13 @@
     width: 290px;
   }
 
+  .advantage-cards-gap{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   .advantage-all-inclusive .advantage-cards-title{
     width: 133px;
   }
@@ -303,7 +312,7 @@
 
   .tour-catalog-container{
     width: 768px;
-    padding: 0 60px;
+    padding: 0 45px;
   }
 
   .tour-catalog-title{
@@ -312,6 +321,7 @@
   }
 
   .card{
+    margin: 15px;
     width: 309px;
     height: 386px;
   }
@@ -365,7 +375,7 @@
 
   .tour-catalog-container{
     width: 320px;
-    padding: 0 25px;
+    padding: 0 15px;
   }
 
   .tour-catalog-title{
@@ -375,6 +385,7 @@
   }
 
   .card{
+    margin: 10px;
     width: 270px;
   }
 
@@ -443,6 +454,8 @@
   }
 
   .reservation-flex-item{
+    margin-right: 0;
+    margin-bottom: 60px;
     max-width: 419px;
     text-align: center;
   }
@@ -474,6 +487,7 @@
   }
 
   .reservation-flex-item{
+    margin-bottom: 40px;
     max-width: 290px;
     text-align: center;
   }
@@ -585,6 +599,7 @@
   }
 
   .contacts-flex-item{
+    margin-left: 0;
     width: 290px;
   }
 
@@ -681,7 +696,6 @@
 @media screen and (max-width:767px){
   .flex-container{
     flex-direction: column;
-    gap: 30px;
   }
 
   .site-footer{
