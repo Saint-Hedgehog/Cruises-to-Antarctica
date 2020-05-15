@@ -6,8 +6,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: content-box;
 }
 
@@ -45,7 +45,7 @@ body {
   display: block;
   width: 70px;
   height: 38px;
-  background-image: url(../img/icon-logo.svg);
+  background-image: url("../img/icon-logo.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70px 38px;
@@ -60,7 +60,7 @@ body {
   display: block;
   width: 70px;
   height: 38px;
-  background-image: url(../img/icon-popap-logo.svg);
+  background-image: url("../img/icon-popap-logo.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70px 38px;
@@ -74,6 +74,7 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
+
 .header-item {
   margin-left: 33px;
 }
@@ -159,9 +160,9 @@ body {
   background-color: #f9fbfd;
 }
 
-.hamburger-icon-container:hover+.hamburger-icon:hover,
-.hamburger-icon-container:hover+.hamburger-icon:hover::before,
-.hamburger-icon-container:hover+.hamburger-icon:hover::after {
+.hamburger-icon-container:hover + .hamburger-icon:hover,
+.hamburger-icon-container:hover + .hamburger-icon:hover::before,
+.hamburger-icon-container:hover + .hamburger-icon:hover::after {
   background-color: #011c40;
   cursor: pointer;
 }
@@ -202,7 +203,7 @@ body {
   margin-bottom: 20px;
 }
 
-.popup-logo:focus{
+.popup-logo:focus {
   border: 2px dotted #011c40;
 }
 
@@ -217,7 +218,7 @@ body {
 }
 
 .header-popap-link {
-  font-family: "Montserratmedium";
+  font-family: "Montserratmedium", "Arial", sans-serif;
   text-decoration: none;
   font-size: 18px;
   line-height: 22px;
@@ -250,18 +251,18 @@ body {
   cursor: pointer;
 }
 
-.close-popup:before {
+.close-popup::before {
   content: "";
   background-color: #011c40;
   position: absolute;
   height: 2px;
   width: 13px;
   top: 5px;
-  left: 0px;
+  left: 0;
   transform: rotate(-45deg);
 }
 
-.close-popup:after {
+.close-popup::after {
   content: "";
   background-color: #011c40;
   position: absolute;
@@ -269,7 +270,7 @@ body {
   width: 13px;
   top: 5px;
   transform: rotate(45deg);
-  left: 0px;
+  left: 0;
 }
 /* popap styles end*/
 
@@ -279,7 +280,7 @@ body {
 
 .intro {
   min-height: 650px; //100vh
-  background-image: url(../img/header-fon.png);
+  background-image: url("../img/header-fon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -339,7 +340,8 @@ body {
   max-height: 301px;
 }
 
-.penguins-768, .penguins-320 {
+.penguins-768,
+.penguins-320 {
   display: none;
 }
 
@@ -350,7 +352,7 @@ body {
 .advantage {
   min-height: 562px; //100vh
   padding: 120px 0;
-  background-image: url(../img/advantages-fon.png);
+  background-image: url("../img/advantages-fon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -488,7 +490,7 @@ body {
 .card-olympi-1366,
 .card-aurora-1366,
 .card-leonor-1366,
-.card-minion1-1366{
+.card-minion1-1366 {
   width: 260px;
   height: 386px;
 }
@@ -512,7 +514,7 @@ body {
 
 .back {
   background: #011c40;
-  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   transform: rotateY(180deg);
 }
 
@@ -575,7 +577,7 @@ body {
 }
 
 .back-list-item:last-child {
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .back-button {
@@ -605,7 +607,7 @@ body {
 .reservation {
   padding: 50px 0;
   min-height: 555px; //100vh
-  background-image: url(../img/reservation-fon-1366.png);
+  background-image: url("../img/reservation-fon-1366.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -658,9 +660,9 @@ body {
   color: #f9fbfd;
 }
 
-.reservation-form input[type=text],
-.reservation-form input[type=tel],
-.reservation-form input[type=email] {
+.reservation-form input[type="text"],
+.reservation-form input[type="tel"],
+.reservation-form input[type="email"] {
   box-sizing: border-box;
   margin-bottom: 20px;
   padding: 0 16px;
@@ -672,20 +674,20 @@ body {
   color: #011c40;
 }
 
-.reservation-form input[type=text]::placeholder,
-.reservation-form input[type=tel]::placeholder,
-.reservation-form input[type=email]::placeholder {
+.reservation-form input[type="text"]::placeholder,
+.reservation-form input[type="tel"]::placeholder,
+.reservation-form input[type="email"]::placeholder {
   font-family: "Montserrat", "Arial", sans-serif;
   height: 43px;
   font-size: 14px;
   color: #011c40;
 }
 
-.reservation-form input[type=email] {
+.reservation-form input[type="email"] {
   margin-bottom: 25px;
 }
 
-.reservation-form input[type=checkbox] {
+.reservation-form input[type="checkbox"] {
   position: absolute;
   appearance: none;
 }
@@ -696,7 +698,7 @@ body {
   top: -2px;
   width: 18px;
   height: 18px;
-  background-image: url(../img/icon-checkbox-off-768-1366.svg);
+  background-image: url("../img/icon-checkbox-off-768-1366.svg");
 }
 
 .checkbox-label {
@@ -708,20 +710,20 @@ body {
   color: #f9fbfd;
 }
 
-.reservation-form input[type=checkbox]:checked+.check-box {
-  background-image: url(../img/icon-checkbox-on-768-1366.svg);
+.reservation-form input[type="checkbox"]:checked + .check-box {
+  background-image: url("../img/icon-checkbox-on-768-1366.svg");
 }
 
-.reservation-form input[type=checkbox]:hover+.check-box {
-  border-color:rgba(0,0,0,0.4);
+.reservation-form input[type="checkbox"]:hover + .check-box {
+  border-color: rgba(0, 0, 0, 0.4);
   box-shadow: 1px 1px 27px -1px #80ff00;
   cursor: pointer;
 }
 
-.reservation-form input[type=text]:hover,
-.reservation-form input[type=tel]:hover,
-.reservation-form input[type=email]:hover {
-  border-color:rgba(0,0,0,0.4);
+.reservation-form input[type="text"]:hover,
+.reservation-form input[type="tel"]:hover,
+.reservation-form input[type="email"]:hover {
+  border-color: rgba(0, 0, 0, 0.4);
   box-shadow: 1px 1px 27px -1px #80ff00;
   cursor: pointer;
 }
@@ -731,13 +733,13 @@ body {
   cursor: pointer;
 }
 
-.reservation-form input[type=checkbox]:focus+.check-box {
+.reservation-form input[type="checkbox"]:focus + .check-box {
   border: 2px dotted #011c40;
 }
 
-.reservation-form input[type=text]:focus,
-.reservation-form input[type=tel]:focus,
-.reservation-form input[type=email]:focus {
+.reservation-form input[type="text"]:focus,
+.reservation-form input[type="tel"]:focus,
+.reservation-form input[type="email"]:focus {
   border: 2px dotted #011c40;
 }
 
@@ -755,7 +757,7 @@ body {
 }
 
 .form-btn:hover {
-  border-color:rgba(0,0,0,0.4);
+  border-color: rgba(0, 0, 0, 0.4);
   box-shadow: 1px 1px 27px -1px #80ff00;
   cursor: pointer;
 }
@@ -854,7 +856,7 @@ body {
 
 .site-footer {
   padding: 50px 0;
-  background-color:  #011c40;
+  background-color: #011c40;
 }
 
 .site-footer-flex-container {
@@ -876,7 +878,7 @@ body {
 }
 
 .footer-item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .footer-link {
@@ -909,7 +911,7 @@ body {
   display: block;
   width: 70px;
   height: 38px;
-  background-image: url(../img/icon-logo.svg);
+  background-image: url("../img/icon-logo.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70px 38px;
@@ -920,7 +922,7 @@ body {
   display: block;
   width: 70px;
   height: 38px;
-  background-image: url(../img/icon-logo-footer-hover.svg);
+  background-image: url("../img/icon-logo-footer-hover.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70px 38px;
@@ -943,7 +945,7 @@ body {
   display: block;
   width: 11px;
   height: 20px;
-  background-image: url(../img/icon-fb.svg);
+  background-image: url("../img/icon-fb.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 11px 20px;
@@ -953,7 +955,7 @@ body {
   display: block;
   width: 11px;
   height: 20px;
-  background-image: url(../img/icon-footer-hover-fb.svg);
+  background-image: url("../img/icon-footer-hover-fb.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 11px 20px;
@@ -968,7 +970,7 @@ body {
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url(../img/icon-od.svg);
+  background-image: url("../img/icon-od.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 20px;
@@ -978,7 +980,7 @@ body {
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url(../img/icon-footer-hover-od.svg);
+  background-image: url("../img/icon-footer-hover-od.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 20px;
@@ -989,7 +991,7 @@ body {
   display: block;
   width: 20px;
   height: 16px;
-  background-image: url(../img/icon-tw.svg);
+  background-image: url("../img/icon-tw.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 16px;
@@ -999,7 +1001,7 @@ body {
   display: block;
   width: 20px;
   height: 16px;
-  background-image: url(../img/icon-footer-hover-tw.svg);
+  background-image: url("../img/icon-footer-hover-tw.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 16px;

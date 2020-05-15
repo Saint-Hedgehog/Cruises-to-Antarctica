@@ -1,7 +1,6 @@
 /* Header styles start*/
 
-@media screen and (max-width:1023px) {
-
+@media screen and (max-width: 1023px) {
   body {
     min-width: 320px;
     font-size: 14px;
@@ -37,6 +36,7 @@
   .header-menu {
     height: 20px;
   }
+
   .header-item {
     margin-left: 23px;
   }
@@ -46,8 +46,7 @@
   }
 }
 
-@media screen and (max-width:767px) {
-
+@media screen and (max-width: 767px) {
   body {
     min-width: 320px;
     font-size: 14px;
@@ -93,8 +92,7 @@
 
 /* intro styles start*/
 
-@media screen and (max-width:1023px) {
-
+@media screen and (max-width: 1023px) {
   .intro {
     min-height: 638px;
   }
@@ -104,7 +102,6 @@
     padding-left: 0;
     font-size: 50px;
     line-height: 61px;
-
   }
 
   .intro p {
@@ -115,8 +112,7 @@
   }
 }
 
-@media screen and (max-width:767px) {
-
+@media screen and (max-width: 767px) {
   .intro h1 {
     padding-top: 185px;
     font-size: 36px;
@@ -137,8 +133,7 @@
 
 /* description styles start*/
 
-@media screen and (max-width:1023px) {
-
+@media screen and (max-width: 1023px) {
   .description {
     margin: 100px 0;
   }
@@ -167,8 +162,7 @@
   }
 }
 
-@media screen and (max-width:767px) {
-
+@media screen and (max-width: 767px) {
   .description {
     margin: 65px 0;
   }
@@ -204,17 +198,17 @@
 
 /* advantage styles start*/
 
-@media screen and (max-width:1023px) {
-  .advantage{
+@media screen and (max-width: 1023px) {
+  .advantage {
     padding: 100px 0;
   }
 
-  .advantage h2{
+  .advantage h2 {
     font-size: 26px;
     line-height: 39px;
   }
 
-  .advantage-cards{
+  .advantage-cards {
     padding: 25px 20px;
     width: 206px;
   }
@@ -224,28 +218,28 @@
     margin-right: 30px;
   }
 
-  .advantage h3{
+  .advantage h3 {
     line-height: 25px;
   }
 
-  .advantage-cruise-ship .advantage-cards-subtitle{
+  .advantage-cruise-ship .advantage-cards-subtitle {
     width: 154px;
   }
 
-  .advantage-all-inclusive .advantage-cards-subtitle{
+  .advantage-all-inclusive .advantage-cards-subtitle {
     width: 162px;
   }
 
-  .advantage-sightseeing-tours .advantage-cards-subtitle{
+  .advantage-sightseeing-tours .advantage-cards-subtitle {
     width: 167px;
   }
 
-  .icon-ship{
+  .icon-ship {
     width: 21px;
     height: 26px;
   }
 
-  .icon-check-mark{
+  .icon-check-mark {
     margin-top: 4px;
     margin-bottom: 28px;
     display: block;
@@ -253,7 +247,7 @@
     height: 19px;
   }
 
-  .icon-boat{
+  .icon-boat {
     margin-top: 7px;
     margin-bottom: 31px;
     display: block;
@@ -262,7 +256,7 @@
   }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .advantage {
     padding: 65px 0;
   }
@@ -312,7 +306,7 @@
 
 /* tour-catalog styles start*/
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width: 1023px) {
   .tour-catalog {
     margin: 100px 0;
   }
@@ -382,7 +376,7 @@
   }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .tour-catalog {
     margin: 65px 0;
   }
@@ -450,18 +444,17 @@
     left: 25px;
     right: 25px;
   }
-
 }
 
 /* tour-catalog styles end*/
 
 /* reservation styles start*/
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width: 1023px) {
   .reservation {
     padding: 100px 0;
     min-height: 805px;
-    background-image: url(../img/reservation-fon-768.png);
+    background-image: url("../img/reservation-fon-768.png");
   }
 
   .reservation-container {
@@ -503,8 +496,8 @@
   }
 }
 
-@media screen and (max-width:767px) {
-  .reservation{
+@media screen and (max-width: 767px) {
+  .reservation {
     padding: 65px 0;
     min-height: 760px;
   }
@@ -550,9 +543,9 @@
     text-align: center;
   }
 
-  .reservation-form input[type=text],
-  .reservation-form input[type=tel],
-  .reservation-form input[type=email],
+  .reservation-form input[type="text"],
+  .reservation-form input[type="tel"],
+  .reservation-form input[type="email"],
   .form-btn {
     width: 230px;
   }
@@ -583,8 +576,8 @@
 
 /* contacts styles start*/
 
-@media screen and (max-width:1023px) {
-  .contacts{
+@media screen and (max-width: 1023px) {
+  .contacts {
     margin: 100px 0;
   }
 
@@ -617,10 +610,9 @@
   .contacts h3 {
     margin-bottom: 40px;
   }
-
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .contacts {
     margin: 65px 0;
   }
@@ -667,7 +659,7 @@
 
 /* footer styles start*/
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width: 1023px) {
   .footer-menu {
     height: 20px;
   }
@@ -682,67 +674,67 @@
   }
 
   .foter-logo {
-      margin-right: 2px;
-      width: 38px;
-      height: 20px;
-      background-size: 38px 20px;
-    }
+    margin-right: 2px;
+    width: 38px;
+    height: 20px;
+    background-size: 38px 20px;
+  }
 
-    .foter-logo:hover {
-      margin-right: 2px;
-      width: 38px;
-      height: 20px;
-      background-size: 38px 20px;
-    }
+  .foter-logo:hover {
+    margin-right: 2px;
+    width: 38px;
+    height: 20px;
+    background-size: 38px 20px;
+  }
 
-    .social {
-      width: 87px;
-      height: 20px;
-    }
+  .social {
+    width: 87px;
+    height: 20px;
+  }
 
-    .fb {
-      width: 9px;
-      height: 16px;
-      background-size: 9px 16px;
-    }
+  .fb {
+    width: 9px;
+    height: 16px;
+    background-size: 9px 16px;
+  }
 
-    .fb:hover {
-      width: 9px;
-      height: 16px;
-      background-size: 9px 16px;
-    }
+  .fb:hover {
+    width: 9px;
+    height: 16px;
+    background-size: 9px 16px;
+  }
 
-    .icon-od {
-      margin-left: 23px;
-      margin-right: 23px;
-    }
+  .icon-od {
+    margin-left: 23px;
+    margin-right: 23px;
+  }
 
-    .od {
-      width: 16px;
-      height: 16px;
-      background-size: 16px 16px;
-    }
+  .od {
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+  }
 
-    .od:hover {
-      width: 16px;
-      height: 16px;
-      background-size: 16px 16px;
-    }
+  .od:hover {
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+  }
 
-    .tw {
-      width: 16px;
-      height: 13px;
-      background-size: 16px 13px;
-    }
+  .tw {
+    width: 16px;
+    height: 13px;
+    background-size: 16px 13px;
+  }
 
-    .tw:hover {
-      width: 16px;
-      height: 13px;
-      background-size: 16px 13px;
-    }
+  .tw:hover {
+    width: 16px;
+    height: 13px;
+    background-size: 16px 13px;
+  }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .flex-container {
     flex-direction: column;
   }
