@@ -699,6 +699,8 @@ body {
   width: 18px;
   height: 18px;
   background-image: url("../img/icon-checkbox-off-768-1366.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .checkbox-label {
@@ -734,6 +736,7 @@ body {
 }
 
 .reservation-form input[type="checkbox"]:focus + .check-box {
+  box-sizing: border-box;
   border: 2px dotted #011c40;
 }
 
@@ -754,6 +757,7 @@ body {
   border: 0;
   color: #011c40;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .form-btn:hover {
@@ -763,6 +767,7 @@ body {
 }
 
 .form-btn:focus {
+  box-sizing: content-box;
   border: 2px dotted #011c40;
 }
 
