@@ -21,42 +21,34 @@ body {
 
 /* Header styles end*/
 
-.container{
-  width: 100%;
-  min-width: 1160px;
+.container {
+  max-width: 1366px;
+  padding: 0 103px;
+  margin: 0 auto;
 }
 
 .site-header {
   padding-top: 35px;
+  width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   color: #f9fbfd;
   z-index: 1;
 }
 
-.header-flex-container {
+.header-top {
+  height: 38px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
 }
 
 .logo {
-  margin-left: 103px;
-  width: 6.034%;
-  height: 100%;
-}
-
-//.logo-flex{
-//  width: 6.034%;
-//  height: 100%;
-//}
-
-.logo:focus {
-  box-sizing: border-box;
-  border: 2px dotted #011c40;
+  display: block;
+  width: 70px;
+  height: 38px;
+  background-image: url("../img/icon-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 38px;
 }
 
 .logo:hover {
@@ -70,9 +62,13 @@ body {
   cursor: pointer;
 }
 
+.logo:focus {
+  box-sizing: border-box;
+  border: 2px dotted #011c40;
+}
+
 .header-menu {
-  margin-right: 103px;
-//  min-height: 38px;
+  height: 38px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -86,8 +82,7 @@ body {
 .header-link {
   font-family: "Montserratmedium", "Arial", sans-serif;
   text-decoration: none;
-  font-size: 1.31vw;
-  line-height: 1.6375vw;
+  line-height: 20px;
   color: #f9fbfd;
 }
 
@@ -121,11 +116,6 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-
-.hamburger-icon-container:hover {
-  box-sizing: border-box;
-  border: 2px dotted #011c40;
 }
 
 .hamburger {
@@ -182,7 +172,7 @@ body {
 .hamburger-icon:active,
 .hamburger-icon:active::before,
 .hamburger-icon:active::after {
-  background-color: #011c40;
+  background-color: #103464;
 }
 
 /* hamburger styles end*/
@@ -205,6 +195,27 @@ body {
 
 .popup-logo {
   margin-bottom: 20px;
+  display: block;
+  width: 42px;
+  height: 22px;
+  background-image: url("../img/icon-popap-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 42px 22px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.popup-logo:hover{
+  display: block;
+  width: 42px;
+  height: 22px;
+  background-image: url("../img/icon-logo-footer-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 42px 22px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .popup-logo:focus {
@@ -283,7 +294,7 @@ body {
 /* intro styles start*/
 
 .intro {
-  min-height: 100vh; //100vh
+  min-height: 650px; //100vh
   background-image: url("../img/header-fon.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -293,21 +304,19 @@ body {
 }
 
 .intro h1 {
-  margin-left: 198px;
-  margin-right: 198px;
   padding-top: 283px;
+  padding-left: 95px;
   font-family: "Montserratbold", "Arial", sans-serif;
-  font-size: 4.42vw;
-  line-height: 5.4vw;
+  font-size: 54px;
+  line-height: 66px;
   color: #f9fbfd;
 }
 
 .intro p {
-  margin-left: 198px;
-  margin-right: 198px;
   padding-top: 30px;
-  font-size: 1.64vw;
-  line-height: 1.965vw;
+  padding-left: 95px;
+  font-size: 20px;
+  line-height: 24px;
 }
 /* intro styles start*/
 
@@ -326,30 +335,24 @@ body {
 
 .description-flex-item {
   margin-right: 88px;
-  margin-left: 103px;
-  width: 44.138%;
+  max-width: 512px;
 }
 
 .description h2 {
   margin-bottom: 40px;
   font-family: "MontserratSemiBold", "Arial", sans-serif;
-  font-size: 2.2925vw;
-  line-height: 150%;
+  font-size: 28px;
+  line-height: 42px;
 }
 
 .description p {
-  line-height: 150%;
-  font-size: 1.31vw;
-}
-
-.fleximg{
-  width: 48.276%;
-  height: 100%;
+  line-height: 24px;
+  font-size: 16px;
 }
 
 .penguins-1366{
-  margin-right: 103px;
-  max-width: 100%;
+  max-width: 560px;
+  max-height: 301px;
 }
 
 .penguins-768,
@@ -378,24 +381,16 @@ body {
 
 .advantage h2 {
   font-family: "MontserratSemiBold", "Arial", sans-serif;
-  font-size: 2.2925vw;
-  line-height: 150%;
+  font-size: 28px;
+  line-height: 42px;
   margin-bottom: 60px;
   text-align: center;
 }
 
 .advantage-cards {
   padding: 30px;
-  width: 31.04%;
+  max-width: 360px;
   background-color: #f9fbfd;
-}
-
-.advantage-cards__margin-left{
-  margin-left: 103px;
-}
-
-.advantage-cards__margin-right{
-  margin-right: 103px;
 }
 
 .advantage-cards-gap {
@@ -407,47 +402,47 @@ body {
   margin-top: 25px;
   margin-bottom: 20px;
   font-family: "Montserratmedium", "Arial", sans-serif;
-  font-size: 1.4738vw;
-  line-height: 150%;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 .advantage p {
-  font-size: 1.146vw;
-  line-height: 140%;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .advantage-cruise-ship p {
-  min-width: 288px;
+  max-width: 288px;
 }
 
 .advantage-all-inclusive p {
-  min-width: 280px;
+  max-width: 280px;
 }
 
 .advantage-sightseeing-tours p {
-  min-width: 241px;
+  max-width: 241px;
 }
 
 .icon-ship {
   display: block;
-  width: 7.5%;
-  height: 100%;
+  width: 27px;
+  height: 32px;
 }
 
 .icon-check-mark {
   margin-top: 5px;
   margin-bottom: 31px;
   display: block;
-  width: 10.556%;
-  height: 100%;
+  width: 38px;
+  height: 21px;
 }
 
 .icon-boat {
   margin-top: 8px;
   margin-bottom: 34px;
   display: block;
-  width: 11.667%;
-  height: 100%;
+  width: 42px;
+  height: 15px;
 }
 
 /* advantage styles end
@@ -455,18 +450,6 @@ body {
 
 .tour-catalog {
   margin: 120px 0;
-}
-
-.tour-catalog-container {
-  width: 100%;
-//  height: 100%;
-//  min-height: 883px;
-  min-width: 1160px;
-}
-
-.tour-catalog-margin{
-  padding-left: 103px;
-  padding-right: 103px;
 }
 
 .tour-catalog-flex-container {
@@ -478,22 +461,17 @@ body {
 .tour-catalog h2 {
   margin-bottom: 60px;
   font-family: "MontserratSemiBold", "Arial", sans-serif;
-  font-size: 2.2925vw;
-  line-height: 150%;
+  font-size: 28px;
+  line-height: 42px;
   text-align: center;
 }
 
 .card {
   margin: 15px;
-  min-width: 260px;
-  min-height: 386px;
+  width: 260px;
+  height: 386px;
   position: relative;
-  perspective: 2000px;
-}
-
-.flexcard{
-  width: 22.415%;
-  height: 100%;
+  perspective: 1000px;
 }
 
 .front,
@@ -521,8 +499,8 @@ body {
 .card-aurora-1366,
 .card-leonor-1366,
 .card-minion1-1366 {
-  width: 100%;
-  height: 100%;
+  width: 260px;
+  height: 386px;
 }
 
 .card-astoria-768,
@@ -567,8 +545,8 @@ body {
   bottom: 30px;
   left: 30px;
   font-family: "Montserratmedium", "Arial", sans-serif;
-  font-size: 1.4738vw;
-  line-height: 150%;
+  font-size: 18px;
+  line-height: 27px;
   color: #f9fbfd;
 }
 
@@ -577,8 +555,8 @@ body {
   top: 35px;
   left: 25px;
   font-family: "Montserratmedium", "Arial", sans-serif;
-  font-size: 1.4738vw;
-  line-height: 150%;
+  font-size: 18px;
+  line-height: 27px;
   color: #f9fbfd;
 }
 
@@ -615,8 +593,7 @@ body {
 }
 
 .back-button {
-  width: 80.769%;
-  padding: 14px 0;
+  padding: 14px 46px 15px 47px;
   position: absolute;
   bottom: 35px;
   left: 25px;
@@ -637,7 +614,7 @@ body {
 }
 
 .back-button:focus {
-  box-shadow: 1px 1px 27px -1px #80ff00;
+  box-shadow: 1px 1px 27px -1px #ff3c00;
 }
 
 /* tour-catalog styles end*/
@@ -654,8 +631,9 @@ body {
 }
 
 .reservation-container {
-  width: 100%;
-  min-width: 1160px;
+  max-width: 1366px;
+  padding: 0 163px;
+  margin: 0 auto;
 }
 
 .reservation-flex-container {
@@ -666,9 +644,8 @@ body {
 }
 
 .reservation-flex-item {
-  margin-right: 144px;
-  margin-left: 163px;
-  width: 42.5%;
+  margin-right: 40px;
+  max-width: 493px;
 }
 
 .reservation-flex-item h2 {
@@ -679,17 +656,16 @@ body {
 }
 
 .reservation-flex-item p {
-  width: 71.4%;
+  max-width: 352px;
   font-size: 18px;
   line-height: 27px;
 }
 
 .reservation-form {
-  margin-right: 163px;
-  min-width: 403px;
-  box-sizing: border-box;
   padding: 50px;
+  max-width: 403px;
   background: #011c40;
+  box-sizing: border-box;
 }
 
 .reservation-form p {
@@ -703,15 +679,15 @@ body {
 .reservation-form input[type="text"],
 .reservation-form input[type="tel"],
 .reservation-form input[type="email"] {
-  box-sizing: border-box;
   margin-bottom: 20px;
-  padding: 0 16px;
   width: 100%;
+  padding: 0 16px;
   height: 43px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #011c40;
+  box-sizing: border-box;
 }
 
 .reservation-form input[type="text"]::placeholder,
@@ -826,8 +802,8 @@ body {
 
 .map-1366 {
   order: 0;
-  max-width: 100%;
-  margin-left: 103px;
+  width: 560px;
+  height: 306px;
 }
 
 .map-768,
@@ -837,8 +813,7 @@ body {
 
 .contacts-flex-item {
   margin-left: 100px;
-  margin-left: 103px;
-  width: 43.103%;
+  width: 500px;
 }
 
 .contacts h3 {
@@ -906,7 +881,6 @@ body {
 }
 
 .footer-menu {
-  margin-left: 103px;
   height: 38px;
   display: flex;
   flex-wrap: wrap;
@@ -975,7 +949,6 @@ body {
 }
 
 .social {
-  margin-right: 103px;
   width: 117px;
   height: 38px;
   display: flex;

@@ -14,16 +14,7 @@ headerToggle.addEventListener('click', function () {
   }
 });
 
-//Маска для телефона
-var element = document.getElementById("phone");
-  var maskOptions = {
-      mask: "+0(000)000-00-00",
-      lazy: false
-  }
-  var mask = new IMask(element, maskOptions);
-
-
-
+/* eslint-disable */
     // Модальное окно
 
 // открыть по кнопке
@@ -31,10 +22,8 @@ $(".js-button-campaign").click(function() {
 
   $(".js-overlay-campaign").fadeIn();
   $(".js-overlay-campaign").addClass("disabled");
-//    window.onload(function(){
-//      $(".js-overlay-campaign").removeClass("popap-display");
-//    })
-//      });
+
+});
 
 // закрыть на крестик
 $(".js-close-campaign").click(function() {
@@ -49,3 +38,14 @@ $(document).mouseup(function (e) {
     $(".js-overlay-campaign").fadeOut();
   }
 });
+
+//Маска для телефона
+var element = document.getElementById("phone");
+  var maskOptions = {
+      mask: "+0(000)000-00-00",
+      lazy: false
+  }
+  var mask = new IMask(element, maskOptions);
+
+
+/* eslint-disable */
